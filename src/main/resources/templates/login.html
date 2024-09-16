@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<style>
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    background-image: url('https://wallpapercave.com/wp/wp7420986.pnghttps://wallpapercave.com/wp/wp7420986.png'), linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)); /* Background image with gradient overlay */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    color: white; /* Default text color */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Form container styling */
+.form-container {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 40px;
+    max-width: 400px; /* Maximum width of the form */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    text-align: center; /* Center text */
+}
+
+/* Header styling */
+h1 {
+    font-size: 2.5em; /* Larger font size for the header */
+    margin-bottom: 20px; /* Space below the header */
+    color: white; /* White color for the heading */
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin: 10px 0 5px; /* Margin for spacing */
+    font-weight: bold;
+}
+
+/* Input field styling */
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for better touch target */
+    margin-bottom: 20px; /* Space between inputs */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for inputs */
+    font-size: 1em; /* Font size for inputs */
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding for button */
+    font-size: 1.2em; /* Font size for button */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-image 0.3s ease, transform 0.2s ease; /* Transition effects */
+    width: 100%; /* Full width */
+}
+
+/* Button hover effect */
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right, #feb47b, #ff7e5f); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Smaller font size for smaller screens */
+    }
+}
+/* General body styling */
+
+</style>
+
+
+
+<form action="login" method="post">
+
+
+<label>Email: </label>
+<input type="email" name="email" required>  <br></br>
+
+<label>password: </label>
+<input type="password" name="password" required>  <br></br>
+
+<input type="submit"  value="LOGIN">
+
+</form>
+
+</body>
+</html>

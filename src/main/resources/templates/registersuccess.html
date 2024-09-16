@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<style>
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Header styling */
+h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Button container styling */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Button styling */
+input[type="submit"] {
+    background-image: linear-gradient(to right, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-image 0.3s ease, transform 0.2s ease;
+    margin: 10px 0; /* Space between buttons */
+    width: 200px; /* Fixed width for buttons */
+}
+
+/* Button hover effect */
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right, #0056b3, #007bff);
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    input[type="submit"] {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+</style>
+<h2>register success</h2>
+
+
+<a href="map-register">
+<input type="submit" value="register">
+</a>
+
+<a href="map-login">
+<input type="submit" value="login">
+</a>
+
+</body>
+</html>

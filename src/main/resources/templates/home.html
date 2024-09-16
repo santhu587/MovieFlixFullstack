@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<style>
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Button styling */
+input[type="submit"] {
+    background-image: linear-gradient(to right, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-image 0.3s ease;
+    margin: 10px;
+}
+
+/* Explore Movies button */
+a[href="exploremovies"] input[type="submit"] {
+    background-image: linear-gradient(to right, #2196F3, #0b7dda);
+}
+
+/* Update Profile button */
+a[href="update-p"] input[type="submit"] {
+    background-image: linear-gradient(to right, #FF9800, #e68a00);
+}
+
+/* Logout button */
+a[href="logout"] input[type="submit"] {
+    background-image: linear-gradient(to right, #f44336, #da190b);
+}
+
+/* Button hover effect */
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right, #45a049, #4CAF50);
+}
+
+/* Explore Movies button hover effect */
+a[href="exploremovies"] input[type="submit"]:hover {
+    background-image: linear-gradient(to right, #0b7dda, #2196F3);
+}
+
+/* Update Profile button hover effect */
+a[href="update-p"] input[type="submit"]:hover {
+    background-image: linear-gradient(to right, #e68a00, #FF9800);
+}
+
+/* Logout button hover effect */
+a[href="logout"] input[type="submit"]:hover {
+    background-image: linear-gradient(to right, #da190b, #f44336);
+}
+</style>
+
+<h2> Welcome to SpringBoot Project</h2>
+
+<a href="exploremovies"> <input type="submit" value="Explore Movies"></a>  <br></br>
+
+<a href="update-p"> <input type="submit" value="Update Profile"></a>  <br></br>
+
+
+<a href="logout"> <input type="submit" value="Logout"></a>  <br></br>
+
+</body>
+</html>

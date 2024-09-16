@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<style>
+
+
+/* Style the body to center the form on the page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style the form container */
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Style form labels */
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 16px;
+}
+
+/* Style input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Style radio buttons with inline-block and spacing */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Style the textarea */
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect to the submit button */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Add responsiveness */
+@media (max-width: 600px) {
+    form {
+        padding: 30px;
+    }
+}
+
+</style>
+
+<form action="register" method="post">
+<label>Name: </label>
+<input type="text" name="name" required> <br></br>
+
+<label>Email: </label>
+<input type="email" name="email" required>  <br></br>
+
+<label>password: </label>
+<input type="password" name="password" required>  <br></br>
+
+<label>Phone Number:</label>
+<input type="number" name="phone" required>  <br></br>
+
+<label>Gender:</label>
+M<input type="radio" name="gender" value="male">
+F<input type="radio" name="gender" value="female">
+O<input type="radio" name="gender" value="others"><br></br>
+
+<label>Address:</label>
+<textarea name="address"></textarea> <br></br>
+
+<input type="submit"  value="REGISTER">
+
+</form> 
+
+</body>
+</html>

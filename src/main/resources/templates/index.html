@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Movieflex.com</title>
+</head>
+<body>
+<style>
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    background-image: url('https://www.okynemedialab.com/wp-content/uploads/2019/11/netflix-background-1024x576.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    color: white; /* Text color */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+}
+
+/* Header styling */
+h1 {
+    font-size: 2.5em; /* Larger font size for the header */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Button container styling */
+.button-container {
+    text-align: center; /* Center align buttons */
+}
+
+/* Button styling */
+input[type="submit"] {
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px 30px; /* Padding for buttons */
+    font-size: 1.2em; /* Font size for buttons */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-image 0.3s ease, transform 0.2s ease; /* Transition effects */
+    margin: 10px; /* Space between buttons */
+}
+
+/* Button hover effect */
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right, #feb47b, #ff7e5f); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Smaller font size for smaller screens */
+    }
+    
+    input[type="submit"] {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+</style>
+
+
+ <h1> Welcome to movieFlex  Fullstack Application</h1>
+<a href="map-register">
+<input type="submit" value="register">
+</a>
+<br>
+
+<a href="map-login">
+<input type="submit" value="login">
+</a>
+
+</body>
+</html>

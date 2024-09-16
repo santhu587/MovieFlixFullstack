@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<style>
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styling */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Limit the width of the form */
+    margin: auto; /* Center the form */
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Input and select styling */
+input[type="text"], select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for better touch target */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width */
+}
+
+/* Button hover effect */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+</style>
+
+<h2> Enter the movie Details</h2>
+<form action="addmoviecont" method="post">
+<label>Movie Name:</label>
+<input type="text" name="movieName" required> <br></br>
+
+<label>Movie Link</label>
+<input type="text" name="movieLink" > <br></br>
+
+<label>Movie Category:</label>
+<select name="movieGenre">
+  <option value="SciFi"> SciFi</option>
+  <option value="Horror"> Horror</option>
+  <option value="Romance"> Romance</option>
+  <option value="Action"> Action</option>
+</select>    <br></br>
+
+
+<label>Movie Cast:</label>
+<input type="text" name="movieCast" required> <br></br>
+
+
+<label>Movie Director:</label>
+<input type="text" name="movieDirector" required> <br></br>
+
+
+<input type="submit" value="Add Movie">
+
+</form>
+
+</body>
+</html>
